@@ -1,10 +1,14 @@
-import React from "react";
+import React from 'react';
+import InputComp from '../../components/InputComponents/InputComp';
+import "./HomePage.css"
 
-function App() {
+
+const HomePage = () => {
   return (
-    <h1> TESTE</h1>
-
+    <div>
+      <InputComp/>
+    </div>
   );
 }
 
-export default App;
+export default HomePage;
