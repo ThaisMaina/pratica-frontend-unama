@@ -1,21 +1,26 @@
-.form label {
+form {
+   line-height: 1; 
+   margin: 100px 40px 5px;
+}
+
+form label {
     display:block;
     font-size: 18px;
     margin: 0 10px 5px;
 }
 
-.form input {
+form input {
     display:block;
     margin: 0 0 20px;
     padding: 5px 25px;
     width: 30%
 }
 
-.form {
+form {
     margin: 40 px 40px;
 }
 
-.form fieldset {
+form fieldset {
     border: none;
 }
 
@@ -29,4 +34,11 @@
     size: 20;
     max-width: 3;
 
+}
+
+.input-radio {
+    display: inline;
+    margin: 0 10px 10px;
+    width: 45%;
+    
 }
