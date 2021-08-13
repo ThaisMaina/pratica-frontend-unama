@@ -1,5 +1,6 @@
 import React from "react";
 import Campo from "./Campo";
+
 import "./InputStyle.css";
 
 
@@ -18,26 +19,19 @@ function InputComp () {
             </fieldset>
             
             <fieldset id="contato">
-                <legend>Telefone</legend>
-                <Campo textLabel={"Nome"} typeInput={"text"}/>
+                <Campo textLabel={"Telefone"}/>
                 <select>
                     <option>Celular</option>
                     <option>Fixo</option>
                 </select>
             </fieldset>
 
-            <fieldset id="genero">
-                <legend>Gênero</legend>
+            <fieldset className="input-radio">
+                <label>Gênero</label>
                 <label for="radio-feminino"><input type="radio" name="genero" value="feminino" id="radio-feminino" className="input-radio"/>Feminino</label>
-                
-
                 <label for="radio-masculino"><input type="radio" name="genero" value="masculino" id="radio-masculino" className="input-radio"/>Masculino</label>
-                
-
-                <label for="radio-outro"><input type="radio" name="genero" value="outro" id="radio-outro" className="input-radio"/>Outro</label>
-                
+                <label for="radio-outro"><input type="radio" name="genero" value="outro" id="radio-outro" className="input-radio"/>Outros</label>
             </fieldset>
-
             <input type="submit" value="Concluir" className="enviar" />
 
         </form>

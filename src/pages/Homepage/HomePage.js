@@ -1,16 +1,20 @@
 import React from 'react';
 import InputComp from '../../components/InputComponents/InputComp';
-import "./HomePage.css"
 
 
-const HomePage = () => {
+
+
+const App = () => {
   return (
     <div>
-      <InputComp />
+      <InputComp></InputComp>
     </div>
+
   );
 }
 
 
 
-export default HomePage;
+
+
+export default App;
