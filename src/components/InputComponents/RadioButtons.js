@@ -2,7 +2,7 @@ import React from 'react';
 
 function RadioButtons () {
     return (
-    <fieldset>
+    <fieldset className="input-radio">
         <label>Gênero</label>
         <label for="radio-feminino"><input type="radio" name="genero" value="feminino" id="radio-feminino" className="input-radio"/>Feminino</label>
         <label for="radio-masculino"><input type="radio" name="genero" value="masculino" id="radio-masculino" className="input-radio"/>Masculino</label>

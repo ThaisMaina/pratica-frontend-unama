@@ -1,20 +1,14 @@
-import React from 'react';
-import InputComp from '../../components/InputComponents/InputComp';
+import React from "react";
+import InputComp from "../../components/InputComponents/InputComp";
 
 
-
-
-const App = () => {
+const HomePage = () => {
   return (
     <div>
-      <InputComp></InputComp>
+      <InputComp/>
     </div>
 
   );
-}
+};
 
-
-
-
-
-export default App;
+export default HomePage;

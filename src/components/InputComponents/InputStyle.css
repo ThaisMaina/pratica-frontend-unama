@@ -22,6 +22,9 @@ form fieldset {
 }
 
 .enviar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 30%;
     padding: 5px 25px;
     box-shadow: 2px 2px #000000;
@@ -46,4 +49,21 @@ form fieldset {
 
 .genero {
     font-size: 18px;
+}
+
+.contato {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 100px;
+    margin: 0 10px 10px;
+
+}
+
+.op-telefone {
+    display: flex;
+    height: 25px;
+    width: 200px;
+    padding: 5%;
+
 }
