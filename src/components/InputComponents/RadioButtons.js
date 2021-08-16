@@ -1,15 +1,30 @@
-import React from 'react';
+import React from "react";
+import RadioGenero from "./RadioGenero";
+import {useState} from "react"
 
-function RadioButtons () {
-    return (
-    <fieldset className="input-radio">
-        <label>Gênero</label>
-        <label for="radio-feminino"><input type="radio" name="genero" value="feminino" id="radio-feminino" className="input-radio"/>Feminino</label>
-        <label for="radio-masculino"><input type="radio" name="genero" value="masculino" id="radio-masculino" className="input-radio"/>Masculino</label>
-        <label for="radio-outro"><input type="radio" name="genero" value="outro" id="radio-outro" className="input-radio"/>Outros</label>
-    </fieldset>
-    );
+function RadioButtons() {
+
+  const [formValues, setFormValues] = useState({});
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  return (
+    <section>
+      <label>Gênero</label>
+      <label>
+        <RadioGenero textLabel="Feminino" name="genero" onChange={handleInputChange}/>
+      </label>
+      <label>
+      <RadioGenero textLabel="Masculino" name="genero" onChange={handleInputChange}/>
+      </label>
+      <label>
+      <RadioGenero textLabel="Outros" name="genero" onChange={handleInputChange}/>
+      </label>
+    </section>
+  );
 }
-
 
 export default RadioButtons;

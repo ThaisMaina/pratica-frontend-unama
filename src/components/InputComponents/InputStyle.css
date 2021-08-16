@@ -1,24 +1,44 @@
-form {
-   line-height: 1; 
-   margin: 100px 40px 5px;
-
+.form {
+    padding: 50px;
 }
-
-form label {
-    display:block;
-    font-size: 18px;
-    margin: 0 10px 5px;
-}
-
 form input {
-    display:block;
+    display:flex;
     margin: 0 0 20px;
-    padding: 5px 25px;
+    padding: 5px 5px;
     width: 30%
 }
 
-form fieldset {
-    border: none;
+.contato {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 200px;
+    margin: 0 10px 10px;
+
+}
+
+.telefone {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    height: 15px;
+
+}
+
+.input-radio-data {
+    margin: 0 10px 10px;
+    width: 100px;
+        
+}
+
+.input-radio {
+    display: flex;
+}
+
+.genero {
+    display: flex;
 }
 
 .enviar {
@@ -33,37 +53,3 @@ form fieldset {
 
 }
 
-.cpf {
-    size: 20;
-    max-width: 3;
-
-}
-
-.input-radio {
-    display: inline;
-    margin: 0 10px 10px;
-    width: auto;
-    
-}
-
-
-.genero {
-    font-size: 18px;
-}
-
-.contato {
-    display: flex;
-    justify-content: flex-start;
-    height: 50px;
-    width: 100px;
-    margin: 0 10px 10px;
-
-}
-
-.op-telefone {
-    display: flex;
-    height: 25px;
-    width: 200px;
-    padding: 5%;
-
-}
