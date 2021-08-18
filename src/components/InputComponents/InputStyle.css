@@ -1,11 +1,22 @@
+form {
+    background-color: #9b75be;
+}
+
+input {
+    background-color: #d4bce7;
+}
+
 .form {
     padding: 50px;
 }
-form input {
+
+
+
+.InputForm {
     display:flex;
     margin: 0 0 20px;
     padding: 5px 5px;
-    width: 30%
+    width: 70%
 }
 
 .contato {
@@ -16,6 +27,7 @@ form input {
     height: 50px;
     width: 200px;
     margin: 0 10px 10px;
+    margin-left: 60px;
 
 }
 
@@ -27,14 +39,35 @@ form input {
 
 }
 
-.input-radio-data {
-    margin: 0 10px 10px;
-    width: 100px;
-        
+.spaceFone {
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .input-radio {
     display: flex;
+    margin: 0 10px 10px;
+    width: 100px;
+}
+
+.input-radio-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 10px 10px;
+    width: 100px;
+}
+
+.genero-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-gender{
+    display:flex;
+    margin: 0 0 20px;
+    padding: 5px 5px;
 }
 
 .genero {
@@ -45,7 +78,7 @@ form input {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 30%;
+    width: 70%;
     padding: 5px 25px;
     box-shadow: 2px 2px #000000;
     font-size: 16px;

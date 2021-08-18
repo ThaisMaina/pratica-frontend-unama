@@ -1,14 +1,15 @@
 import React from "react";
 import InputMask from "react-input-mask";
+import './InputStyle.css'
 
-function InputCpf({ text, mask, ...others }) {
+function Mask({ text, mask, ...others }) {
   return (
     <div className="input-cpf">
       <label>{text}</label>
-      <InputMask type="text" mask={mask} {...others} /> 
+      <InputMask type="text" mask={mask} {...others} className="InputForm"/> 
     </div>
 
   );
 }
 
-export default InputCpf;
+export default Mask;

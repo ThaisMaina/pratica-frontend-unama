@@ -1,9 +1,12 @@
 import React from 'react';
+import './InputStyle.css'
 
-function Campo ({textLabel, typeInput, ...others}) {
+
+const Campo = ({textLabel, typeInput, ...others}) => {
     return (
         <div>
-            <label> {textLabel} </label><input {...others} type = {typeInput} />
+            <label> {textLabel} </label>
+            <input {...others} type={typeInput} className="InputForm"/>
         </div>
     );
 }

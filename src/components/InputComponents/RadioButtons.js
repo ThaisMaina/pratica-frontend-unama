@@ -1,29 +1,16 @@
 import React from "react";
-import RadioGenero from "./RadioGenero";
-import {useState} from "react"
+import './InputStyle.css'
 
-function RadioButtons() {
-
-  const [formValues, setFormValues] = useState({});
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
-  };
-
+function RadioButtons({ textLabel, radio, ...others }) {
   return (
-    <section>
-      <label>Gênero</label>
-      <label>
-        <RadioGenero textLabel="Feminino" name="genero" onChange={handleInputChange}/>
-      </label>
-      <label>
-      <RadioGenero textLabel="Masculino" name="genero" onChange={handleInputChange}/>
-      </label>
-      <label>
-      <RadioGenero textLabel="Outros" name="genero" onChange={handleInputChange}/>
-      </label>
-    </section>
+    <div className="genero-button">
+      <input {...others} type="radio" name="genero" value="Feminino" id="feminino" className="radio-gender" />
+      <label htmlFor="feminino">{textLabel} Feminino</label>
+      <input {...others} type="radio" name="genero" value="Masculino" id="masculino" className="radio-gender" />
+      <label htmlFor="masculino">{textLabel} Masculino</label>
+      <input {...others} type="radio" name="genero" value="Outros" id="outro" className="radio-gender" />
+      <label htmlFor="outro">{textLabel} Outros</label>
+    </div>
   );
 }
 

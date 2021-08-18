@@ -1,6 +1,39 @@
+.section {
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+
 .Home {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     padding: 50px;
+    background-color: indigo;
+
 }
+
+.inputcomp, 
+.textarea {
+    margin: 0 0 50px;
+
+}
+
+.teste1 {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.teste2 {
+    background-color: #9b75be;
+    width: 100%;
+    margin: 0 0 200px;
+
+}
+
+p{
+    padding: 20px;
+    
+}
+
+
