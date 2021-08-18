@@ -3,13 +3,23 @@ import InputComp from "../../components/InputComponents/InputComp";
 import "./HomePage.css";
 
 const HomePage = () => {
-  const [formValues, setFormValues] = useState({});
+  const [formValues, setFormValues] = useState({
+    email:"",
+    confirmEmail:"",
+    nome:"",
+    sobrenome:"",
+    cpf:"",
+    nascimento:"",
+    fone:"",
+    genero:""
+  });
 
   const handleInput = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
-  
   };
+
+
 
 
   return (
@@ -19,13 +29,11 @@ const HomePage = () => {
       </div>
       <div className="teste2">
         <h1>
-          <p>Email: {formValues.email}</p>
-          <p>Confirme Email: {formValues.confirmEmail}</p>
-          <p>Nome: {formValues.nome} </p>
-          <p>Sobrenome: {formValues.nome} {formValues.sobrenome}</p>
-          <p>CPF:{formValues.CPF}</p>
-          <p>Data de Nascimento: {formValues.dataDeNascimento}</p>
-          <p>Telefone: {formValues.Fone}</p>
+          <p>Email: {formValues.email === formValues.confirmEmail && formValues.email}</p>
+          <p>Nome: {formValues.nome !=="" && formValues.sobrenome !=="" ? formValues.nome + " " + formValues.sobrenome : null} </p>
+          <p>CPF:{formValues.cpf}</p>
+          <p>Data de Nascimento: {formValues.nascimento}</p>
+          <p>Telefone: {formValues.fone}</p>
           <p>Gênero: {formValues.genero}</p>
         </h1>
       </div>

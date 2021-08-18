@@ -8,8 +8,8 @@ function RadioButtons({ textLabel, radio, ...others }) {
       <label htmlFor="feminino">{textLabel} Feminino</label>
       <input {...others} type="radio" name="genero" value="Masculino" id="masculino" className="radio-gender" />
       <label htmlFor="masculino">{textLabel} Masculino</label>
-      <input {...others} type="radio" name="genero" value="Outros" id="outro" className="radio-gender" />
-      <label htmlFor="outro">{textLabel} Outros</label>
+      <input {...others} type="radio" name="genero" value="Outros" id="outros" className="radio-gender" />
+      <label htmlFor="outros">{textLabel} Outros</label>
     </div>
   );
 }

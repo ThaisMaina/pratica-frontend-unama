@@ -25,9 +25,8 @@ input {
     align-items: center;
     flex-direction: row;
     height: 50px;
-    width: 200px;
     margin: 0 10px 10px;
-    margin-left: 60px;
+
 
 }
 
@@ -62,13 +61,15 @@ input {
 .genero-button{
     display: flex;
     flex-direction: column;
-}
-
-.radio-gender{
-    display:flex;
     margin: 0 0 20px;
     padding: 5px 5px;
 }
+
+/*.radio-gender{
+    display:flex;
+    margin: 0 0 20px;
+    padding: 5px 5px;
+}*/
 
 .genero {
     display: flex;
@@ -84,5 +85,9 @@ input {
     font-size: 16px;
     font-family: 'Comic Neue', cursive;
 
+}
+
+.alerta-erro {
+    color:#ffbdbd
 }
 
